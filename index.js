@@ -17,6 +17,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(process.env.PORT_NUMBER, () => {
+app.listen(process.env.PORT | 3000, () => {
   console.log(`Serve running on http://localhost:3000`);
 });
