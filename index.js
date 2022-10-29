@@ -1,7 +1,7 @@
 const express = require("express");
 
 const app = express();
-var cors = require("cors");
+const cors = require("cors");
 require("dotenv").config();
 
 //middleware
@@ -10,8 +10,10 @@ app.options("*", cors());
 
 app.get("/", (req, res) => {
   return res.status(200).json({
-    username: "Nicksy",
+    slackUsername: "Nicksy",
     backend: true,
+    age: 25,
+    bio: "My name is Nickson kipkorir a full-stack engineer from Kenya.",
   });
 });
 
